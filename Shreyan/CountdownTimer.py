@@ -7,7 +7,8 @@ import time as timeLib
 
 # Countdown Timer Function
 def pyTime(i_time):
-    m_minutes, m_seconds = divmod(i_time, 60)
+    m_minutes = i_time // 60
+    m_seconds = i_time % 60
     m_curTime = getCurTime()
     m_finalTime = m_curTime + i_time
     mw_curTime = 0

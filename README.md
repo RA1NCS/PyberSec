@@ -23,6 +23,8 @@ A password generator that can generate random and secure passwords. This project
 
 #### Link : https://www.youtube.com/watch?v=SqvVm3QiQVk&t=2531s
 
+##### Completed By Shreyan
+
 ## Tic-Tac-Toe AI
 
 A tic-tac-toe game that can be played against an AI opponent. The AI uses the minimax algorithm to make its moves. This project is a great way to learn about game development and AI.

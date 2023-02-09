@@ -11,6 +11,7 @@ This repository contains a collection of projects developed in Python. The proje
 ## Countdown Timer
 A simple yet powerful timer to keep track of time for various tasks and activities. The project was created using tkinter and is a great starter project for beginners to learn the basics of GUI development.
 #### Link : https://www.youtube.com/watch?v=SqvVm3QiQVk&t=1992s
+##### Completed By Shreyan
 
 ## Password Generator
 A password generator that can generate random and secure passwords. This project uses the random module to generate passwords and is a great way to learn how to handle strings in Python.

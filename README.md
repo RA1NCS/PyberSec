@@ -25,6 +25,14 @@ A password generator that can generate random and secure passwords. This project
 
 ##### Completed By Shreyan
 
+## ROT-13 Encrypter
+
+A simple ROT-13 encrypter that can encrypt and decrypt messages. This project is a great way to learn about cryptography and the basics of working with strings in Python.
+
+## Mini RSA
+
+A simple implementation of the RSA algorithm. This project is a great way to learn about cryptography and the RSA algorithm.
+
 ## Tic-Tac-Toe AI
 
 A tic-tac-toe game that can be played against an AI opponent. The AI uses the minimax algorithm to make its moves. This project is a great way to learn about game development and AI.

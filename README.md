@@ -4,6 +4,8 @@ This repository contains a collection of projects developed in Python. The proje
 
 -    Countdown Timer
 -    Password Generator
+-    ROT-13 Encrypter and Decrypter
+-    Mini RSA Encrypter and Decrypter
 -    Tic-Tac-Toe AI
 -    Snake Game
 -    Weather Program
@@ -25,7 +27,7 @@ A password generator that can generate random and secure passwords. This project
 
 ##### Completed By Shreyan
 
-## ROT-13 Encrypter
+## ROT-13 Encrypter and Decrypter
 
 A simple ROT-13 encrypter that can encrypt and decrypt messages. This project is a great way to learn about cryptography and the basics of working with strings in Python.
 

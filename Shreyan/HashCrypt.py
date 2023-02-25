@@ -6,7 +6,7 @@ inflectEngine = engine()
 
 
 def randomCaesar(i_passIn) -> str:
-    m_randNum = randbelow(24)
+    m_randNum = randbelow(27)
     m_shifted = ""
     for char in i_passIn:
         mf_randNum = m_randNum
@@ -50,7 +50,7 @@ def randPunct() -> str:
 
 
 # Removes all spaces and replaced them with a random character
-def removeSpaces(i_origString: str):
+def removeSpaces(i_origString: str) -> str:
     m_newString = ""
     for i in i_origString:
         if i == " ":
@@ -70,14 +70,34 @@ def removeSpaces(i_origString: str):
 #     return m_newText
 
 
-# Hex Version
+# Hexed Version
 def stringToHex(i_passIn: str) -> str:
-    m_newText = ""
+    # m_newText = ""
+    m_keyOne = ""
+    m_keyTwo = ""
     for letter in i_passIn:
         m_curIndex = hex(ord(letter))
         m_curIndex = m_curIndex[2:4]
-        m_newText += m_curIndex + "\\"
-    return m_newText
+        m_keyOne += m_curIndex[0:1]  # + "/"
+        m_keyTwo += m_curIndex[1:2]  # + "/"
+    return m_keyOne, m_keyTwo
+
+
+# Remove Duplicates
+def dupliRemove(i_origString: str) -> str:
+    m_newString = ""
+    m_repCount = 1
+    for index, char in enumerate(i_origString):
+        if index != (len(i_origString) - 1):
+            if i_origString[index + 1] == char:
+                m_repCount += 1
+            else:
+                m_newString += char + str(m_repCount) + randPunct()
+                m_repCount = 1
+        else:
+            m_newString += char + str(m_repCount) + randPunct()
+
+    return m_newString
 
 
 # Main Function
@@ -88,7 +108,9 @@ if __name__ == "__main__":
         m_scrambledText + randPunct() + randPunct() + numberToText(m_randShift)
     )
     m_stageThreeText = removeSpaces(m_stageTwoText)
-    m_stageFourText = stringToHex(
-        stringToHex(stringToHex(stringToHex(m_stageThreeText)))
-    )
-    print(m_stageFourText)
+    m_keyOne, m_keyTwo = stringToHex(m_stageThreeText)
+    m_stageFiveTextA = dupliRemove(m_keyOne)
+    m_stageFiveTextB = dupliRemove(m_keyTwo)
+
+    print(m_keyOne, m_stageFiveTextA)
+    print(m_keyTwo, m_stageFiveTextB)

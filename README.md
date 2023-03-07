@@ -17,7 +17,7 @@ A simple yet powerful timer to keep track of time for various tasks and activiti
 
 #### Link : https://www.youtube.com/watch?v=SqvVm3QiQVk&t=1992s
 
-##### Completed By Shreyan
+##### Completed
 
 ## Password Generator
 
@@ -25,7 +25,7 @@ A password generator that can generate random and secure passwords. This project
 
 #### Link : https://www.youtube.com/watch?v=SqvVm3QiQVk&t=2531s
 
-##### Completed By Shreyan
+##### Completed
 
 ## ROT-13 Encrypter and Decrypter
 

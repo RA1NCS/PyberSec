@@ -59,17 +59,6 @@ def removeSpaces(i_origString: str) -> str:
     return m_newString
 
 
-# ASCII Version
-# def stringToHex(i_passIn: str) -> str:
-#     m_newText = ""
-#     for letter in i_passIn:
-#         m_curIndex = str(ord(letter))
-#         if len(m_curIndex) == 2:
-#             m_curIndex = "0" + m_curIndex
-#         m_newText += m_curIndex + randPunct()
-#     return m_newText
-
-
 # Hexed Version
 def stringToHex(i_passIn: str) -> str:
     # m_newText = ""
@@ -112,5 +101,5 @@ if __name__ == "__main__":
     m_stageFiveTextA = dupliRemove(m_keyOne)
     m_stageFiveTextB = dupliRemove(m_keyTwo)
 
-    print(m_keyOne, m_stageFiveTextA)
-    print(m_keyTwo, m_stageFiveTextB)
+    print(f"Key 1 : {m_stageFiveTextA}")
+    print(f"Key 2 : {m_stageFiveTextB}")

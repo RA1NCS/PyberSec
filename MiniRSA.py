@@ -71,10 +71,29 @@ def DecryptMessage(message: str, d: int, n: int) -> str:
 
 
 if __name__ == "__main__":
-    n, e, d = RSA()
-    print(f"n: {n} | e: {e} | d: {d}")
-    messageToInput = input("Please enter the message you would like to encrypt here: ")
-    encryptedMessage = EncryptMessage(messageToInput, e, n)
-    decryptedMessage = DecryptMessage(encryptedMessage, d, n)
-    print(encryptedMessage)
-    print(decryptedMessage)
+    encryptChoice = input("Do you want to encrypt or decrypt a message? (E/D)\n> ")
+
+    if encryptChoice.lower() == "e":
+        n, e, d = RSA()
+        messageToEncrypt = input(
+            "\nPlease enter the message you would like to encrypt here)\n> "
+        )
+        encryptedMessage = EncryptMessage(messageToEncrypt, e, n)
+        print("\nEncrypted Message: " + encryptedMessage)
+        print(f"\nGeneral Decyptor: {n}\nDecyption Key: {d}")
+
+    elif encryptChoice.lower() == "d":
+        print(
+            "\nGuidelines:\n1. The message must be an RSA function applied to the ASCII values of a string\n2. The numbers must be separated by a space.\n"
+        )
+
+        messageToDecrypt = input(
+            "\nPlease enter the message you would like to decrypt here)\n> "
+        )
+        n = int(input("\nPlease enter your general decryptor(n) here\n> "))
+        d = int(input("\nPlease enter your decryption key (d) here\n> "))
+        decryptedMessage = DecryptMessage(messageToDecrypt, d, n)
+        print("\nDecrypted Message: " + decryptedMessage)
+
+    else:
+        print("Wrong choice, please re-run the program.")

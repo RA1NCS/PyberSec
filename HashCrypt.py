@@ -1,3 +1,7 @@
+# Author: Shreyan Gupta
+# Date Started: 03/22/2023
+# Date Completed: 03/24/2023
+
 from secrets import randbelow
 from inflect import engine
 from string import punctuation

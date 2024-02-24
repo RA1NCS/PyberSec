@@ -11,13 +11,9 @@ This repository contains a collection of projects developed in Python. The proje
 
 A simple reverse timer. The Challenge for this project was to not use time.sleep(), but rather to just use the time.time() function to make the timer.
 
-##### Completed
-
 ## Password Generator
 
 A password generator that can generate random and secure passwords. This project uses the random module to generate passwords and is a great way to learn how to handle strings in Python.
-
-##### Completed
 
 ## ROT-13 Encrypter and Decrypter
 
